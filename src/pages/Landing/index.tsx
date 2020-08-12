@@ -1,5 +1,8 @@
 import React from 'react';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { RectButton } from 'react-native-gesture-handler'; //vem junto com o pacote de rotas
+
 
 import styles from './styles';
 
@@ -9,6 +12,16 @@ import giveClassesIcon from '../../assets/images/icons/give-classes.png';
 import heartIcon from '../../assets/images/icons/heart.png';
 
 function Landing() {
+    const { navigate } = useNavigation();
+
+    function handleNavigationToGiveClassesPage() {
+        navigate('GiveClasses');
+    }
+
+    function handleNavigateToStudyPages() {
+        navigate('Study');
+    }
+
     return (
         <View style={styles.container}>
             <Image source={landingImg} style={styles.banner}/>
@@ -19,17 +32,22 @@ function Landing() {
             </Text>
 
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={[styles.button, styles.buttonsPrimary]}>
+                <RectButton 
+                    onPress={handleNavigateToStudyPages} 
+                    style={[styles.button, styles.buttonsPrimary]}>
                     <Image source={studyIcon} />
 
                     <Text style={styles.buttonsText}>Estudar</Text>
-                </TouchableOpacity>
+                </RectButton>
                
-                <TouchableOpacity style={[styles.button, styles.buttonsSecundary]}>
+                <RectButton 
+                onPress={handleNavigationToGiveClassesPage} 
+                style={[styles.button, styles.buttonsSecundary]}>
+
                     <Image source={giveClassesIcon} />                    
 
                     <Text style={styles.buttonsText}>Dar aulas</Text>
-                </TouchableOpacity>
+                </RectButton>
             </View>
 
             <Text style={styles.totalConnections}>
