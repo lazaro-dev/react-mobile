@@ -2,14 +2,14 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {            
-        backgroundColor: '#8257e5',
         padding: 40,
+        backgroundColor: '#8257e5',
     },
 
     topBar: {
         flexDirection: 'row',     
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
     },
   
     title: {
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         lineHeight: 32,
         maxWidth: 160,
-        marginVertical: 40;
+        marginVertical: 40,
     },
 
 });
