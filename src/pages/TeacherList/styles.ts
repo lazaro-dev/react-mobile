@@ -2,67 +2,56 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1, //para ocupar todo o espaço em tela        
+        flex: 1,       
         backgroundColor: '#f0f0f7',
-        // justifyContent: 'center',
-        // padding: 40,
     },
 
-    // banner: {
-    //     width: '100%',
-    //     resizeMode: 'contain', //redimenciona proporcionalmente, para todo conteudo da imagem apareça
-        
-    // },
+    teacherList: {
+        marginTop: -40,
+    },
 
-    // title: {
-    //     fontFamily: 'Poppins_400Regular',
-    //     color: '#fff',
-    //     fontSize: 20,
-    //     lineHeight: 30,
-    //     marginTop: 80,
-    // },
+    searchForm: {
+        marginBottom: 24,    
+    },
 
-    // titleBold: {
-    //     fontFamily: 'Poppins_600SemiBold',
-    // },
-
-    // buttonsContainer: {
-    //     flexDirection: 'row',
-    //     marginTop: 40,
-    //     justifyContent: 'space-between',
-    // },
-   
-    // button: {
-    //     height: 150,
-    //     width: '48%',
-    //     backgroundColor: '#333',
-    //     borderRadius: 8,
-    //     padding: 24,
-    //     justifyContent: 'space-between',
-    // },
+    label: {
+        color: '#d4c2ff',
+        fontFamily: 'Poppins_400Regular'
+    },
     
-    // buttonsPrimary: {
-    //     backgroundColor: '#9871f5',
-    // },
+    inputGroup: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
     
-    // buttonsSecundary: {
-    //     backgroundColor: '#04d361',
-    // },
+    inputBlock: {
+        width: '48%',
+    },
+    
+    input: {
+        height: 54,
+        backgroundColor: '#fff',
+        borderRadius: 8,
+        justifyContent: 'center',
+        paddingHorizontal: 16,
+        marginTop: 4,
+        marginBottom: 16,
+    },
 
-    // buttonsText: {
-    //     fontFamily: 'Archivo_700Bold',
-    //     color: '#fff',
-    //     fontSize: 20,
-    // },
+    submitButton: {
+        backgroundColor: '#04d361',
+        height: 56,
+        borderRadius: 8,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 
-    // totalConnections: {
-    //     fontFamily: 'Poppins_400Regular',
-    //     color: '#d4c2ff',
-    //     fontSize: 12,
-    //     lineHeight: 20,
-    //     maxWidth: 140,
-    //     marginTop: 40,
-    // }
+    submitButtonText: {
+        color: '#fff',
+        fontFamily: 'Archivo_700Bold',
+        fontSize: 16,
+    },
 });
 
 export default styles;

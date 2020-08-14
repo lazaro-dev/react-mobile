@@ -2,10 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1, //para ocupar todo o espaço em tela        
+        flex: 1,        
         backgroundColor: '#f0f0f7',
-        // justifyContent: 'center',
-        // padding: 40,
+    },
+    
+    teacherList: {
+        marginTop: -40,
     },
 
 });
